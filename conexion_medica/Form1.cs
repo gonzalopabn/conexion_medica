@@ -42,20 +42,22 @@ namespace conexion_medica
                 while (myR.Read())
                 {               
                     count = count + 1;
+                    mp.t_id.Text = myR[0].ToString(); 
                     mp.t1.Text = myR[1].ToString();
-                    mp.t2.Text = myR[1].ToString();
-                    mp.t3.Text = myR[1].ToString();
-                    mp.t4.Text = myR[1].ToString();
-                    mp.t5.Text = myR[1].ToString();
-                    mp.t6.Text = myR[1].ToString();
-                    mp.t7.Text = myR[1].ToString();
-                    mp.t8.Text = myR[1].ToString();
-                    mp.t9.Text = myR[1].ToString();
-                    mp.t10.Text = myR[1].ToString();
-                    mp.t11.Text = myR[1].ToString();
-                    mp.t12.Text = myR[1].ToString();
-                    mp.t13.Text = myR[1].ToString();
-                    mp.t14.Text = myR[1].ToString();
+                    mp.t2.Text = myR[2].ToString();
+                    mp.t3.Text = myR[3].ToString();
+                    mp.t4.Text = myR[4].ToString();
+                    mp.t5.Text = myR[5].ToString();
+                    mp.t6.Text = myR[6].ToString();
+                    mp.t7.Text = myR[7].ToString();
+                    mp.t8.Text = myR[8].ToString();
+                    mp.t9.Text = myR[9].ToString();
+                    mp.t10.Text = myR[10].ToString();
+                    mp.t11.Text = myR[11].ToString();
+                    mp.t12.Text = myR[12].ToString();
+                    mp.t13.Text = myR[13].ToString();
+                    mp.t14.Text = myR[14].ToString();
+                    
                 }
                 myConn.Close();
                 if (count == 1)
@@ -63,7 +65,7 @@ namespace conexion_medica
                     MessageBox.Show("Bienvenido");                    
                     mp.Show();
                     count = 0;
-                    mp.t_id.Text = t_usuario.ToString(); 
+                   
                     t_usuario.Clear();
                     t_contra.Clear();
                     this.Hide();

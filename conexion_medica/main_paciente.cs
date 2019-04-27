@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace conexion_medica
 {
@@ -36,7 +37,19 @@ namespace conexion_medica
 
         private void main_paciente_Load(object sender, EventArgs e)
         {
+            string myC = "datasource=remotemysql.com ;port=3306;username=MtcqKvJRNU;password=8cjzPjeLPp";
+            MySqlConnection myConn = new MySqlConnection(myC);
 
+            MySqlCommand sc = new MySqlCommand("select * from MtcqKvJRNU.reportes where id_paciente='" + t_id.Text + "';", myConn);
+            MySqlDataReader myR;
+            myConn.Open();
+            myR = sc.ExecuteReader(CommandBehavior.CloseConnection);
+            dataGridView1.Rows.Clear(); 
+            while (myR.Read() == true)
+            {
+                dataGridView1.Rows.Add(myR[0], myR[2], myR[3], myR[4], myR[5]);
+            }
+            myConn.Close();
         }
     }
 }

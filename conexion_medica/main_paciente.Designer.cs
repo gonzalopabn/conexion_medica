@@ -32,6 +32,9 @@
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.t14 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.t_id = new System.Windows.Forms.TextBox();
             this.t13 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.t3 = new System.Windows.Forms.TextBox();
@@ -69,9 +72,6 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.t_id = new System.Windows.Forms.TextBox();
-            this.t14 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -151,6 +151,33 @@
             this.tabPage1.Text = "Informacion General";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // t14
+            // 
+            this.t14.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t14.Location = new System.Drawing.Point(406, 534);
+            this.t14.Multiline = true;
+            this.t14.Name = "t14";
+            this.t14.Size = new System.Drawing.Size(329, 132);
+            this.t14.TabIndex = 32;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(402, 507);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(122, 23);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Comentarios:";
+            // 
+            // t_id
+            // 
+            this.t_id.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t_id.Location = new System.Drawing.Point(313, 34);
+            this.t_id.Name = "t_id";
+            this.t_id.Size = new System.Drawing.Size(73, 25);
+            this.t_id.TabIndex = 30;
+            // 
             // t13
             // 
             this.t13.Font = new System.Drawing.Font("Roboto Lt", 10F);
@@ -189,6 +216,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(406, 34);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(329, 415);
@@ -476,34 +504,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Busqueda de Especialistas";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // t_id
-            // 
-            this.t_id.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t_id.Location = new System.Drawing.Point(313, 34);
-            this.t_id.Name = "t_id";
-            this.t_id.Size = new System.Drawing.Size(73, 25);
-            this.t_id.TabIndex = 30;
-            this.t_id.Visible = false;
-            // 
-            // t14
-            // 
-            this.t14.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t14.Location = new System.Drawing.Point(406, 534);
-            this.t14.Multiline = true;
-            this.t14.Name = "t14";
-            this.t14.Size = new System.Drawing.Size(329, 132);
-            this.t14.TabIndex = 32;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(402, 507);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(122, 23);
-            this.label14.TabIndex = 31;
-            this.label14.Text = "Comentarios:";
             // 
             // main_paciente
             // 
