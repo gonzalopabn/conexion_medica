@@ -1,6 +1,6 @@
 ﻿namespace conexion_medica
 {
-    partial class main_doc
+    partial class main_provedor
     {
         /// <summary>
         /// Required designer variable.
@@ -36,14 +36,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nombre_paciente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellido_paciente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.curp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.especialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numero_serie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -59,7 +60,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1264, 27);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // datosToolStripMenuItem
@@ -75,7 +76,7 @@
             // 
             this.registrarPacienteToolStripMenuItem.Name = "registrarPacienteToolStripMenuItem";
             this.registrarPacienteToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
-            this.registrarPacienteToolStripMenuItem.Text = "Registrar Paciente";
+            this.registrarPacienteToolStripMenuItem.Text = "Registrar Equipo";
             // 
             // verDatosPersonalesToolStripMenuItem
             // 
@@ -94,11 +95,11 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 30);
+            this.tabControl1.Location = new System.Drawing.Point(12, 36);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1240, 637);
-            this.tabControl1.TabIndex = 2;
+            this.tabControl1.TabIndex = 4;
             // 
             // tabPage1
             // 
@@ -113,38 +114,21 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1232, 602);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Busqueda de Pacientes";
+            this.tabPage1.Text = "Busqueda de Equipo";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nombre_paciente,
-            this.apellido_paciente,
-            this.curp});
+            this.nombre,
+            this.especialidad,
+            this.numero_serie,
+            this.descripcion});
             this.dataGridView1.Location = new System.Drawing.Point(10, 62);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1216, 534);
             this.dataGridView1.TabIndex = 30;
-            // 
-            // nombre_paciente
-            // 
-            this.nombre_paciente.HeaderText = "Nombre";
-            this.nombre_paciente.Name = "nombre_paciente";
-            this.nombre_paciente.Width = 180;
-            // 
-            // apellido_paciente
-            // 
-            this.apellido_paciente.HeaderText = "Apellido";
-            this.apellido_paciente.Name = "apellido_paciente";
-            this.apellido_paciente.Width = 250;
-            // 
-            // curp
-            // 
-            this.curp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.curp.HeaderText = "CURP";
-            this.curp.Name = "curp";
             // 
             // textBox1
             // 
@@ -160,9 +144,9 @@
             this.label1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(264, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 23);
+            this.label1.Size = new System.Drawing.Size(154, 23);
             this.label1.TabIndex = 28;
-            this.label1.Text = "CURP:";
+            this.label1.Text = "Numero de Serie:";
             // 
             // textBox22
             // 
@@ -192,16 +176,39 @@
             this.tabPage3.Text = "Busqueda de Especialistas";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // main_doc
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 200;
+            // 
+            // especialidad
+            // 
+            this.especialidad.HeaderText = "Especialidad";
+            this.especialidad.Name = "especialidad";
+            this.especialidad.Width = 200;
+            // 
+            // numero_serie
+            // 
+            this.numero_serie.HeaderText = "Numero de Serie";
+            this.numero_serie.Name = "numero_serie";
+            this.numero_serie.Width = 200;
+            // 
+            // descripcion
+            // 
+            this.descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
+            // 
+            // main_provedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 679);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "main_doc";
-            this.Text = "main_doc";
+            this.Controls.Add(this.tabControl1);
+            this.Name = "main_provedor";
+            this.Text = "main_provedor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -217,19 +224,20 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem datosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarPacienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verDatosPersonalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn especialidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numero_serie;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre_paciente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellido_paciente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn curp;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
