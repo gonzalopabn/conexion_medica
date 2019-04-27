@@ -63,6 +63,8 @@
             this.t1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.t19 = new System.Windows.Forms.TextBox();
             this.t16 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.t18 = new System.Windows.Forms.TextBox();
@@ -73,8 +75,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.t14 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.t19 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -133,6 +137,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.t13);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.t3);
@@ -433,6 +441,22 @@
             this.tabPage2.Text = "Historial Medico";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(499, 345);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 71);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Seleccionar documento";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // t19
+            // 
+            this.t19.Location = new System.Drawing.Point(409, 295);
+            this.t19.Name = "t19";
+            this.t19.Size = new System.Drawing.Size(319, 29);
+            this.t19.TabIndex = 39;
+            // 
             // t16
             // 
             this.t16.Font = new System.Drawing.Font("Roboto Lt", 10F);
@@ -524,21 +548,41 @@
             this.label19.TabIndex = 27;
             this.label19.Text = "ID Reporte:";
             // 
-            // t19
+            // textBox1
             // 
-            this.t19.Location = new System.Drawing.Point(409, 295);
-            this.t19.Name = "t19";
-            this.t19.Size = new System.Drawing.Size(319, 29);
-            this.t19.TabIndex = 39;
+            this.textBox1.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.textBox1.Location = new System.Drawing.Point(406, 586);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(281, 25);
+            this.textBox1.TabIndex = 32;
             // 
-            // button1
+            // label15
             // 
-            this.button1.Location = new System.Drawing.Point(499, 345);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 71);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Seleccionar documento";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(402, 559);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 23);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Usuario:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.textBox2.Location = new System.Drawing.Point(406, 639);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(281, 25);
+            this.textBox2.TabIndex = 30;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(402, 612);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(111, 23);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Contrasena:";
             // 
             // nuevo_paciente
             // 
@@ -612,5 +656,9 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox t19;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label20;
     }
 }
