@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace conexion_medica
 {
-    public partial class inicio_sesion : Form
+    public partial class main_doc : Form
     {
-        public inicio_sesion()
+        public main_doc()
         {
             InitializeComponent();
         }
