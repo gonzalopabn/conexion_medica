@@ -24,7 +24,11 @@ namespace conexion_medica
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {   
+        {
+            main_paciente mp = new main_paciente();
+            main_doc md = new main_doc();
+            main_provedor mpo = new main_provedor();
+
             try
             {
                 string myC = "datasource=remotemysql.com ;port=3306;username=MtcqKvJRNU;password=8cjzPjeLPp";
@@ -36,18 +40,32 @@ namespace conexion_medica
                 myR = sc.ExecuteReader();
                 int count = 0;
                 while (myR.Read())
-                {
+                {               
                     count = count + 1;
+                    mp.t1.Text = myR[1].ToString();
+                    mp.t2.Text = myR[1].ToString();
+                    mp.t3.Text = myR[1].ToString();
+                    mp.t4.Text = myR[1].ToString();
+                    mp.t5.Text = myR[1].ToString();
+                    mp.t6.Text = myR[1].ToString();
+                    mp.t7.Text = myR[1].ToString();
+                    mp.t8.Text = myR[1].ToString();
+                    mp.t9.Text = myR[1].ToString();
+                    mp.t10.Text = myR[1].ToString();
+                    mp.t11.Text = myR[1].ToString();
+                    mp.t12.Text = myR[1].ToString();
+                    mp.t13.Text = myR[1].ToString();
+                    mp.t14.Text = myR[1].ToString();
                 }
                 myConn.Close();
                 if (count == 1)
                 {
-                    MessageBox.Show("Bienvenido");
-                    main_paciente mp = new main_paciente();
+                    MessageBox.Show("Bienvenido");                    
                     mp.Show();
                     count = 0;
+                    mp.t_id.Text = t_usuario.ToString(); 
                     t_usuario.Clear();
-                    t_contra.Clear();                  
+                    t_contra.Clear();
                     this.Hide();
                 }
                 else if(count == 0)
@@ -62,8 +80,7 @@ namespace conexion_medica
                     myConn.Close();
                     if (count == 1)
                     {
-                        MessageBox.Show("Bienvenido");
-                        main_doc md = new main_doc();
+                        MessageBox.Show("Bienvenido");                       
                         md.Show();
                         count = 0;
                         t_usuario.Clear();
@@ -82,8 +99,7 @@ namespace conexion_medica
                         myConn.Close();
                         if (count == 1)
                         {
-                            MessageBox.Show("Bienvenido");
-                            main_provedor mpo = new main_provedor();
+                            MessageBox.Show("Bienvenido");                          
                             mpo.Show();
                             count = 0;
                             t_usuario.Clear();

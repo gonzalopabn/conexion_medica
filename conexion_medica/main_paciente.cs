@@ -33,5 +33,10 @@ namespace conexion_medica
             ini.abrir();
             this.Close();
         }
+
+        private void main_paciente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

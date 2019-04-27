@@ -32,32 +32,32 @@
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.t13 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.t3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.t12 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.t11 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.t10 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.t9 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.t8 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.t7 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.t6 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.t5 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.t4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.t2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.t1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -69,6 +69,9 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.t_id = new System.Windows.Forms.TextBox();
+            this.t14 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -109,32 +112,35 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox13);
+            this.tabPage1.Controls.Add(this.t14);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.t_id);
+            this.tabPage1.Controls.Add(this.t13);
             this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.textBox8);
+            this.tabPage1.Controls.Add(this.t3);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.textBox11);
+            this.tabPage1.Controls.Add(this.t12);
             this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.textBox12);
+            this.tabPage1.Controls.Add(this.t11);
             this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.textBox9);
+            this.tabPage1.Controls.Add(this.t10);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.textBox10);
+            this.tabPage1.Controls.Add(this.t9);
             this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.textBox7);
+            this.tabPage1.Controls.Add(this.t8);
             this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.textBox6);
+            this.tabPage1.Controls.Add(this.t7);
             this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.t6);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.t5);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.t4);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.t2);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.t1);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
@@ -145,31 +151,31 @@
             this.tabPage1.Text = "Informacion General";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // t13
             // 
-            this.textBox13.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox13.Location = new System.Drawing.Point(406, 531);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(281, 25);
-            this.textBox13.TabIndex = 28;
+            this.t13.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t13.Location = new System.Drawing.Point(406, 479);
+            this.t13.Name = "t13";
+            this.t13.Size = new System.Drawing.Size(329, 25);
+            this.t13.TabIndex = 28;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(402, 504);
+            this.label13.Location = new System.Drawing.Point(402, 452);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(181, 23);
             this.label13.TabIndex = 27;
             this.label13.Text = "Doctor de Cabecera:";
             // 
-            // textBox8
+            // t3
             // 
-            this.textBox8.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox8.Location = new System.Drawing.Point(11, 144);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(281, 25);
-            this.textBox8.TabIndex = 26;
+            this.t3.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t3.Location = new System.Drawing.Point(11, 144);
+            this.t3.Name = "t3";
+            this.t3.Size = new System.Drawing.Size(281, 25);
+            this.t3.TabIndex = 26;
             // 
             // label8
             // 
@@ -189,13 +195,13 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox11
+            // t12
             // 
-            this.textBox11.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox11.Location = new System.Drawing.Point(11, 641);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(281, 25);
-            this.textBox11.TabIndex = 23;
+            this.t12.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t12.Location = new System.Drawing.Point(11, 641);
+            this.t12.Name = "t12";
+            this.t12.Size = new System.Drawing.Size(281, 25);
+            this.t12.TabIndex = 23;
             // 
             // label11
             // 
@@ -207,13 +213,13 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Telefono de Emergencia:";
             // 
-            // textBox12
+            // t11
             // 
-            this.textBox12.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox12.Location = new System.Drawing.Point(11, 586);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(281, 25);
-            this.textBox12.TabIndex = 21;
+            this.t11.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t11.Location = new System.Drawing.Point(11, 586);
+            this.t11.Name = "t11";
+            this.t11.Size = new System.Drawing.Size(281, 25);
+            this.t11.TabIndex = 21;
             // 
             // label12
             // 
@@ -225,13 +231,13 @@
             this.label12.TabIndex = 20;
             this.label12.Text = "Contacto de Emergencia:";
             // 
-            // textBox9
+            // t10
             // 
-            this.textBox9.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox9.Location = new System.Drawing.Point(11, 531);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(281, 25);
-            this.textBox9.TabIndex = 19;
+            this.t10.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t10.Location = new System.Drawing.Point(11, 531);
+            this.t10.Name = "t10";
+            this.t10.Size = new System.Drawing.Size(281, 25);
+            this.t10.TabIndex = 19;
             // 
             // label9
             // 
@@ -243,13 +249,13 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Correo:";
             // 
-            // textBox10
+            // t9
             // 
-            this.textBox10.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox10.Location = new System.Drawing.Point(11, 476);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(281, 25);
-            this.textBox10.TabIndex = 17;
+            this.t9.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t9.Location = new System.Drawing.Point(11, 476);
+            this.t9.Name = "t9";
+            this.t9.Size = new System.Drawing.Size(281, 25);
+            this.t9.TabIndex = 17;
             // 
             // label10
             // 
@@ -261,13 +267,13 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Telefono:";
             // 
-            // textBox7
+            // t8
             // 
-            this.textBox7.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox7.Location = new System.Drawing.Point(11, 416);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(281, 25);
-            this.textBox7.TabIndex = 13;
+            this.t8.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t8.Location = new System.Drawing.Point(11, 416);
+            this.t8.Name = "t8";
+            this.t8.Size = new System.Drawing.Size(281, 25);
+            this.t8.TabIndex = 13;
             // 
             // label7
             // 
@@ -279,13 +285,13 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Domicilio:";
             // 
-            // textBox6
+            // t7
             // 
-            this.textBox6.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox6.Location = new System.Drawing.Point(11, 361);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(281, 25);
-            this.textBox6.TabIndex = 11;
+            this.t7.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t7.Location = new System.Drawing.Point(11, 361);
+            this.t7.Name = "t7";
+            this.t7.Size = new System.Drawing.Size(281, 25);
+            this.t7.TabIndex = 11;
             // 
             // label6
             // 
@@ -297,13 +303,13 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Altura:";
             // 
-            // textBox5
+            // t6
             // 
-            this.textBox5.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox5.Location = new System.Drawing.Point(11, 306);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(281, 25);
-            this.textBox5.TabIndex = 9;
+            this.t6.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t6.Location = new System.Drawing.Point(11, 306);
+            this.t6.Name = "t6";
+            this.t6.Size = new System.Drawing.Size(281, 25);
+            this.t6.TabIndex = 9;
             // 
             // label5
             // 
@@ -315,13 +321,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Peso:";
             // 
-            // textBox4
+            // t5
             // 
-            this.textBox4.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox4.Location = new System.Drawing.Point(11, 251);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(281, 25);
-            this.textBox4.TabIndex = 7;
+            this.t5.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t5.Location = new System.Drawing.Point(11, 251);
+            this.t5.Name = "t5";
+            this.t5.Size = new System.Drawing.Size(281, 25);
+            this.t5.TabIndex = 7;
             // 
             // label4
             // 
@@ -333,13 +339,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Sexo:";
             // 
-            // textBox3
+            // t4
             // 
-            this.textBox3.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox3.Location = new System.Drawing.Point(11, 196);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(281, 25);
-            this.textBox3.TabIndex = 5;
+            this.t4.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t4.Location = new System.Drawing.Point(11, 196);
+            this.t4.Name = "t4";
+            this.t4.Size = new System.Drawing.Size(281, 25);
+            this.t4.TabIndex = 5;
             // 
             // label3
             // 
@@ -351,13 +357,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Edad:";
             // 
-            // textBox2
+            // t2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox2.Location = new System.Drawing.Point(11, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(281, 25);
-            this.textBox2.TabIndex = 3;
+            this.t2.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t2.Location = new System.Drawing.Point(11, 89);
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(281, 25);
+            this.t2.TabIndex = 3;
             // 
             // label2
             // 
@@ -369,13 +375,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Apellido:";
             // 
-            // textBox1
+            // t1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox1.Location = new System.Drawing.Point(11, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 25);
-            this.textBox1.TabIndex = 1;
+            this.t1.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t1.Location = new System.Drawing.Point(11, 34);
+            this.t1.Name = "t1";
+            this.t1.Size = new System.Drawing.Size(281, 25);
+            this.t1.TabIndex = 1;
             // 
             // label1
             // 
@@ -412,7 +418,7 @@
             this.descripcion});
             this.dataGridView1.Location = new System.Drawing.Point(10, 62);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(735, 563);
+            this.dataGridView1.Size = new System.Drawing.Size(735, 615);
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseDoubleClick);
@@ -471,6 +477,34 @@
             this.tabPage3.Text = "Busqueda de Especialistas";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // t_id
+            // 
+            this.t_id.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t_id.Location = new System.Drawing.Point(313, 34);
+            this.t_id.Name = "t_id";
+            this.t_id.Size = new System.Drawing.Size(73, 25);
+            this.t_id.TabIndex = 30;
+            this.t_id.Visible = false;
+            // 
+            // t14
+            // 
+            this.t14.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t14.Location = new System.Drawing.Point(406, 534);
+            this.t14.Multiline = true;
+            this.t14.Name = "t14";
+            this.t14.Size = new System.Drawing.Size(329, 132);
+            this.t14.TabIndex = 32;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(402, 507);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(122, 23);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Comentarios:";
+            // 
             // main_paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -481,6 +515,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "main_paciente";
             this.Text = "main_paciente";
+            this.Load += new System.EventHandler(this.main_paciente_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -496,47 +531,49 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_reporte;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox t_id;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
+        public System.Windows.Forms.TabControl tabControl1;
+        public System.Windows.Forms.TabPage tabPage1;
+        public System.Windows.Forms.TextBox t8;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox t7;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox t6;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox t5;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox t4;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox t2;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox t1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TabPage tabPage2;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox t12;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.TextBox t11;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.TextBox t10;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox t9;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridViewTextBoxColumn id_reporte;
+        public System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        public System.Windows.Forms.DataGridViewTextBoxColumn tipo;
+        public System.Windows.Forms.DataGridViewTextBoxColumn fecha;
+        public System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        public System.Windows.Forms.TextBox textBox22;
+        public System.Windows.Forms.Label label22;
+        public System.Windows.Forms.TabPage tabPage3;
+        public System.Windows.Forms.TextBox t13;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.TextBox t3;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox t14;
+        public System.Windows.Forms.Label label14;
     }
 }
