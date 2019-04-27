@@ -26,5 +26,12 @@ namespace conexion_medica
         {
 
         }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inicio_sesion ini = new inicio_sesion();
+            ini.abrir();
+            this.Close();
+        }
     }
 }

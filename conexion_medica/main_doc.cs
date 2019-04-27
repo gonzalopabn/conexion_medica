@@ -16,5 +16,21 @@ namespace conexion_medica
         {
             InitializeComponent();
         }
+
+        private void registrarPacienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            nuevo_paciente np = new nuevo_paciente();
+            np.Show();
+            this.Close(); 
+
+            
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inicio_sesion ini = new inicio_sesion();
+            ini.abrir();
+            this.Close();
+        }
     }
 }

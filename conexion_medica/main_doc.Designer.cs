@@ -76,6 +76,7 @@
             this.registrarPacienteToolStripMenuItem.Name = "registrarPacienteToolStripMenuItem";
             this.registrarPacienteToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.registrarPacienteToolStripMenuItem.Text = "Registrar Paciente";
+            this.registrarPacienteToolStripMenuItem.Click += new System.EventHandler(this.registrarPacienteToolStripMenuItem_Click);
             // 
             // verDatosPersonalesToolStripMenuItem
             // 
@@ -88,6 +89,7 @@
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
             this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(102, 23);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
+            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
