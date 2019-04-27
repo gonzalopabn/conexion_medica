@@ -83,6 +83,7 @@
             this.verDatosPersonalesToolStripMenuItem.Name = "verDatosPersonalesToolStripMenuItem";
             this.verDatosPersonalesToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.verDatosPersonalesToolStripMenuItem.Text = "Ver datos personales";
+            this.verDatosPersonalesToolStripMenuItem.Click += new System.EventHandler(this.verDatosPersonalesToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
@@ -129,6 +130,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1216, 534);
             this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // nombre_paciente
             // 
@@ -204,6 +206,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "main_doc";
             this.Text = "main_doc";
+            this.Load += new System.EventHandler(this.main_doc_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
