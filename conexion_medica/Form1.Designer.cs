@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio_sesion));
             this.label1 = new System.Windows.Forms.Label();
             this.t_usuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -130,6 +131,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.t_usuario);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "inicio_sesion";
             this.Text = "Inicia sesion para continuar";
             this.Load += new System.EventHandler(this.inicio_sesion_Load);

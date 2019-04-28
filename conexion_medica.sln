@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conexion_medica", "conexion_medica\conexion_medica.csproj", "{97A6A446-52C2-4365-BDB0-608F5DF37274}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "installer", "installer\installer.vdproj", "{63D14B10-38B7-4E53-84C8-4601604B2C34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{97A6A446-52C2-4365-BDB0-608F5DF37274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A6A446-52C2-4365-BDB0-608F5DF37274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A6A446-52C2-4365-BDB0-608F5DF37274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D14B10-38B7-4E53-84C8-4601604B2C34}.Debug|Any CPU.ActiveCfg = Debug
+		{63D14B10-38B7-4E53-84C8-4601604B2C34}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
