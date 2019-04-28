@@ -21,5 +21,10 @@ namespace conexion_medica
         {
 
         }
+
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
