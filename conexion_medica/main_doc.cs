@@ -141,7 +141,7 @@ namespace conexion_medica
             }
             myConn.Close();
             np.Show();
-            np.tabControl1.SelectTab(1);
+            np.materialTabControl1.SelectTab(1);
             this.Close(); 
         }
 

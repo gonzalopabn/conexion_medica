@@ -8,17 +8,58 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace conexion_medica
 {
-    public partial class nuevo_equipo : Form
+    public partial class nuevo_equipo : MaterialForm
     {
         public nuevo_equipo()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red800, Primary.Red900, Primary.Red500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -39,22 +80,7 @@ namespace conexion_medica
             }
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void t8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
             try
             {
@@ -74,7 +100,7 @@ namespace conexion_medica
             }
         }
 
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             try
             {
@@ -94,7 +120,7 @@ namespace conexion_medica
             }
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
         {
             main_provedor mp = new main_provedor();
             mp.Show();
