@@ -35,6 +35,10 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.t0 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.t_contra = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.t13 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.t3 = new System.Windows.Forms.TextBox();
@@ -65,20 +69,20 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.t19 = new System.Windows.Forms.TextBox();
-            this.t16 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.t18 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.t17 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.t15 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.t14 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.t_comen = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.guardarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.t17 = new System.Windows.Forms.DateTimePicker();
+            this.t16 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -102,27 +106,34 @@
             // 
             // guardarToolStripMenuItem
             // 
+            this.guardarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.guardarPacienteToolStripMenuItem,
+            this.guardarReporteToolStripMenuItem});
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(71, 23);
             this.guardarToolStripMenuItem.Text = "Guardar";
+            this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
             // actualizarToolStripMenuItem
             // 
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
             this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(80, 23);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
+            this.actualizarToolStripMenuItem.Click += new System.EventHandler(this.actualizarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(46, 23);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -137,9 +148,11 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.t_comen);
+            this.tabPage1.Controls.Add(this.label21);
+            this.tabPage1.Controls.Add(this.t0);
             this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.t_contra);
             this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.t13);
             this.tabPage1.Controls.Add(this.label13);
@@ -177,10 +190,46 @@
             this.tabPage1.Text = "Informacion General";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // t0
+            // 
+            this.t0.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t0.Location = new System.Drawing.Point(405, 361);
+            this.t0.Name = "t0";
+            this.t0.Size = new System.Drawing.Size(281, 25);
+            this.t0.TabIndex = 32;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(401, 334);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 23);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Usuario:";
+            // 
+            // t_contra
+            // 
+            this.t_contra.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t_contra.Location = new System.Drawing.Point(405, 414);
+            this.t_contra.Name = "t_contra";
+            this.t_contra.Size = new System.Drawing.Size(281, 25);
+            this.t_contra.TabIndex = 30;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(401, 387);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(111, 23);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Contrasena:";
+            // 
             // t13
             // 
             this.t13.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t13.Location = new System.Drawing.Point(406, 531);
+            this.t13.Location = new System.Drawing.Point(405, 306);
             this.t13.Name = "t13";
             this.t13.Size = new System.Drawing.Size(281, 25);
             this.t13.TabIndex = 28;
@@ -189,7 +238,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(402, 504);
+            this.label13.Location = new System.Drawing.Point(401, 279);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(181, 23);
             this.label13.TabIndex = 27;
@@ -215,9 +264,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(406, 34);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(405, 34);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(329, 415);
+            this.pictureBox1.Size = new System.Drawing.Size(178, 231);
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
@@ -421,13 +471,13 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.t16);
+            this.tabPage2.Controls.Add(this.t17);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.t19);
-            this.tabPage2.Controls.Add(this.t16);
             this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.t18);
             this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.t17);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.t15);
             this.tabPage2.Controls.Add(this.label18);
@@ -457,14 +507,6 @@
             this.t19.Size = new System.Drawing.Size(319, 29);
             this.t19.TabIndex = 39;
             // 
-            // t16
-            // 
-            this.t16.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t16.Location = new System.Drawing.Point(10, 140);
-            this.t16.Name = "t16";
-            this.t16.Size = new System.Drawing.Size(281, 25);
-            this.t16.TabIndex = 38;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -478,35 +520,27 @@
             // t18
             // 
             this.t18.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t18.Location = new System.Drawing.Point(10, 247);
+            this.t18.Location = new System.Drawing.Point(10, 257);
             this.t18.Multiline = true;
             this.t18.Name = "t18";
-            this.t18.Size = new System.Drawing.Size(281, 430);
+            this.t18.Size = new System.Drawing.Size(281, 420);
             this.t18.TabIndex = 34;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 220);
+            this.label16.Location = new System.Drawing.Point(6, 231);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(114, 23);
             this.label16.TabIndex = 33;
             this.label16.Text = "Descripcion:";
             // 
-            // t17
-            // 
-            this.t17.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t17.Location = new System.Drawing.Point(10, 192);
-            this.t17.Name = "t17";
-            this.t17.Size = new System.Drawing.Size(281, 25);
-            this.t17.TabIndex = 32;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(6, 165);
+            this.label17.Location = new System.Drawing.Point(6, 173);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(65, 23);
             this.label17.TabIndex = 31;
@@ -548,41 +582,61 @@
             this.label19.TabIndex = 27;
             this.label19.Text = "ID Reporte:";
             // 
-            // textBox1
+            // t_comen
             // 
-            this.textBox1.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox1.Location = new System.Drawing.Point(406, 586);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 25);
-            this.textBox1.TabIndex = 32;
+            this.t_comen.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t_comen.Location = new System.Drawing.Point(405, 476);
+            this.t_comen.Multiline = true;
+            this.t_comen.Name = "t_comen";
+            this.t_comen.Size = new System.Drawing.Size(281, 190);
+            this.t_comen.TabIndex = 34;
             // 
-            // label15
+            // label21
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(402, 559);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 23);
-            this.label15.TabIndex = 31;
-            this.label15.Text = "Usuario:";
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(401, 449);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(112, 23);
+            this.label21.TabIndex = 33;
+            this.label21.Text = "Comentario:";
             // 
-            // textBox2
+            // guardarPacienteToolStripMenuItem
             // 
-            this.textBox2.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox2.Location = new System.Drawing.Point(406, 639);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(281, 25);
-            this.textBox2.TabIndex = 30;
+            this.guardarPacienteToolStripMenuItem.Name = "guardarPacienteToolStripMenuItem";
+            this.guardarPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.guardarPacienteToolStripMenuItem.Text = "Guardar paciente";
+            this.guardarPacienteToolStripMenuItem.Click += new System.EventHandler(this.guardarPacienteToolStripMenuItem_Click);
             // 
-            // label20
+            // guardarReporteToolStripMenuItem
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(402, 612);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(111, 23);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Contrasena:";
+            this.guardarReporteToolStripMenuItem.Name = "guardarReporteToolStripMenuItem";
+            this.guardarReporteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.guardarReporteToolStripMenuItem.Text = "Guardar reporte";
+            this.guardarReporteToolStripMenuItem.Click += new System.EventHandler(this.guardarReporteToolStripMenuItem_Click);
+            // 
+            // t17
+            // 
+            this.t17.Location = new System.Drawing.Point(10, 199);
+            this.t17.Name = "t17";
+            this.t17.Size = new System.Drawing.Size(281, 29);
+            this.t17.TabIndex = 41;
+            // 
+            // t16
+            // 
+            this.t16.FormattingEnabled = true;
+            this.t16.Items.AddRange(new object[] {
+            "Tratamientos",
+            "Notas Hospitalarias",
+            "Interconsultas",
+            "Examenes de Laboratorio",
+            "Notas Quirurgicas",
+            "Reportes de Radiologia",
+            "Notas Ambulatorias"});
+            this.t16.Location = new System.Drawing.Point(10, 140);
+            this.t16.Name = "t16";
+            this.t16.Size = new System.Drawing.Size(281, 30);
+            this.t16.TabIndex = 42;
             // 
             // nuevo_paciente
             // 
@@ -644,11 +698,9 @@
         private System.Windows.Forms.TextBox t1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox t16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox t18;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox t17;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox t15;
         private System.Windows.Forms.Label label18;
@@ -656,9 +708,15 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox t19;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox t0;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox t_contra;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox t_comen;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ToolStripMenuItem guardarPacienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guardarReporteToolStripMenuItem;
+        private System.Windows.Forms.ComboBox t16;
+        private System.Windows.Forms.DateTimePicker t17;
     }
 }
