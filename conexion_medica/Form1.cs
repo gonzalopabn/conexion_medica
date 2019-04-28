@@ -22,6 +22,7 @@ namespace conexion_medica
         {
             this.Show(); 
         }
+        public static string id; 
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -65,6 +66,7 @@ namespace conexion_medica
                     MessageBox.Show("Bienvenido");                    
                     mp.Show();
                     count = 0;
+                    id = t_usuario.Text;
                    
                     t_usuario.Clear();
                     t_contra.Clear();
@@ -85,6 +87,7 @@ namespace conexion_medica
                         MessageBox.Show("Bienvenido");                       
                         md.Show();
                         count = 0;
+                        id = t_usuario.Text;
                         t_usuario.Clear();
                         t_contra.Clear();
                         this.Hide();
@@ -97,6 +100,7 @@ namespace conexion_medica
                         while (myR.Read())
                         {
                             count = count + 1;
+                            id = t_usuario.Text;
                         }
                         myConn.Close();
                         if (count == 1)
@@ -104,6 +108,7 @@ namespace conexion_medica
                             MessageBox.Show("Bienvenido");                          
                             mpo.Show();
                             count = 0;
+                            
                             t_usuario.Clear();
                             t_contra.Clear();
                             this.Hide();

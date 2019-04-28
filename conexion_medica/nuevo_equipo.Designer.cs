@@ -50,14 +50,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.t9 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.t0 = new System.Windows.Forms.TextBox();
+            this.lab = new System.Windows.Forms.Label();
+            this.t2 = new System.Windows.Forms.ComboBox();
             this.t10 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.t2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.t0 = new System.Windows.Forms.Label();
+            this.t9 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -255,8 +255,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.t0);
+            this.tabPage1.Controls.Add(this.lab);
             this.tabPage1.Controls.Add(this.t2);
             this.tabPage1.Controls.Add(this.t10);
             this.tabPage1.Controls.Add(this.label9);
@@ -288,33 +288,32 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabControl1
+            // t0
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(13, 41);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(759, 718);
-            this.tabControl1.TabIndex = 8;
+            this.t0.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t0.Location = new System.Drawing.Point(406, 482);
+            this.t0.Name = "t0";
+            this.t0.Size = new System.Drawing.Size(281, 25);
+            this.t0.TabIndex = 41;
             // 
-            // t9
+            // lab
             // 
-            this.t9.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t9.Location = new System.Drawing.Point(11, 596);
-            this.t9.Name = "t9";
-            this.t9.Size = new System.Drawing.Size(281, 25);
-            this.t9.TabIndex = 36;
+            this.lab.AutoSize = true;
+            this.lab.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab.Location = new System.Drawing.Point(402, 455);
+            this.lab.Name = "lab";
+            this.lab.Size = new System.Drawing.Size(95, 23);
+            this.lab.TabIndex = 40;
+            this.lab.Text = "ID Equipo:";
             // 
-            // label6
+            // t2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 569);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 23);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Ciudad:";
+            this.t2.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t2.FormattingEnabled = true;
+            this.t2.Location = new System.Drawing.Point(11, 89);
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(281, 26);
+            this.t2.TabIndex = 39;
             // 
             // t10
             // 
@@ -334,32 +333,33 @@
             this.label9.TabIndex = 37;
             this.label9.Text = "Estado:";
             // 
-            // t2
+            // t9
             // 
-            this.t2.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t2.FormattingEnabled = true;
-            this.t2.Location = new System.Drawing.Point(11, 89);
-            this.t2.Name = "t2";
-            this.t2.Size = new System.Drawing.Size(281, 26);
-            this.t2.TabIndex = 39;
+            this.t9.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t9.Location = new System.Drawing.Point(11, 596);
+            this.t9.Name = "t9";
+            this.t9.Size = new System.Drawing.Size(281, 25);
+            this.t9.TabIndex = 36;
             // 
-            // textBox1
+            // label6
             // 
-            this.textBox1.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.textBox1.Location = new System.Drawing.Point(406, 482);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 25);
-            this.textBox1.TabIndex = 41;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(7, 569);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 23);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Ciudad:";
             // 
-            // t0
+            // tabControl1
             // 
-            this.t0.AutoSize = true;
-            this.t0.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t0.Location = new System.Drawing.Point(402, 455);
-            this.t0.Name = "t0";
-            this.t0.Size = new System.Drawing.Size(95, 23);
-            this.t0.TabIndex = 40;
-            this.t0.Text = "ID Equipo:";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(13, 41);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(759, 718);
+            this.tabControl1.TabIndex = 8;
             // 
             // nuevo_equipo
             // 
@@ -383,35 +383,35 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.TextBox t7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox t6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox t5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox t3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
-        private System.Windows.Forms.TextBox t8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox t4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox t1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox t10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox t9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.ComboBox t2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label t0;
+        public System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
+        public System.Windows.Forms.TextBox t7;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox t6;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox t5;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox t3;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        public System.Windows.Forms.TextBox t8;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox t4;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox t1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.TabPage tabPage1;
+        public System.Windows.Forms.TextBox t10;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox t9;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TabControl tabControl1;
+        public System.Windows.Forms.ComboBox t2;
+        public System.Windows.Forms.TextBox t0;
+        public System.Windows.Forms.Label lab;
     }
 }

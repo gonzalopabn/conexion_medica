@@ -61,7 +61,7 @@ namespace conexion_medica
                 string myC = "datasource=remotemysql.com ;port=3306;username=MtcqKvJRNU;password=8cjzPjeLPp";
                 MySqlConnection myConn = new MySqlConnection(myC);
                 String query = string.Format("UPDATE MtcqKvJRNU.equipo SET nombre='{1}',especialidad='{2}',descripcion='{3}',num_serie='{4}',modelo='{5}',responsable='{6}',nom_lugar='{7}',direccion='{8}',ciudad='{9}',estado='{10}' WHERE id_equipo='{0}'",
-                    t0.Text, t1.Text, t2.Text, t3.Text, t4.Text, t5.Text, t6.Text, t7.Text, t4.Text, t8.Text, t10.Text);
+                    lab.Text, t1.Text, t2.Text, t3.Text, t4.Text, t5.Text, t6.Text, t7.Text, t4.Text, t8.Text, t10.Text);
                 myConn.Open();
                 MySqlCommand sc = new MySqlCommand(query, myConn);
                 sc.ExecuteNonQuery();
@@ -81,7 +81,7 @@ namespace conexion_medica
                 string myC = "datasource=remotemysql.com ;port=3306;username=MtcqKvJRNU;password=8cjzPjeLPp";
                 MySqlConnection myConn = new MySqlConnection(myC);
                 String query = string.Format("DELETE FROM MtcqKvJRNU.equipo WHERE id_equipo='{0}'",
-                    t0.Text);
+                    lab.Text);
                 myConn.Open();
                 MySqlCommand sc = new MySqlCommand(query, myConn);
                 sc.ExecuteNonQuery();

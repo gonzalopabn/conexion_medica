@@ -36,15 +36,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.especialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numero_serie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.especialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numero_serie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -71,18 +71,21 @@
             this.datosToolStripMenuItem.Name = "datosToolStripMenuItem";
             this.datosToolStripMenuItem.Size = new System.Drawing.Size(57, 23);
             this.datosToolStripMenuItem.Text = "Datos";
+            this.datosToolStripMenuItem.Click += new System.EventHandler(this.datosToolStripMenuItem_Click);
             // 
             // registrarPacienteToolStripMenuItem
             // 
             this.registrarPacienteToolStripMenuItem.Name = "registrarPacienteToolStripMenuItem";
             this.registrarPacienteToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.registrarPacienteToolStripMenuItem.Text = "Registrar Equipo";
+            this.registrarPacienteToolStripMenuItem.Click += new System.EventHandler(this.registrarPacienteToolStripMenuItem_Click);
             // 
             // verDatosPersonalesToolStripMenuItem
             // 
             this.verDatosPersonalesToolStripMenuItem.Name = "verDatosPersonalesToolStripMenuItem";
             this.verDatosPersonalesToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.verDatosPersonalesToolStripMenuItem.Text = "Ver datos personales";
+            this.verDatosPersonalesToolStripMenuItem.Click += new System.EventHandler(this.verDatosPersonalesToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
@@ -130,6 +133,31 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1216, 534);
             this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseDoubleClick);
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 200;
+            // 
+            // especialidad
+            // 
+            this.especialidad.HeaderText = "Especialidad";
+            this.especialidad.Name = "especialidad";
+            this.especialidad.Width = 200;
+            // 
+            // numero_serie
+            // 
+            this.numero_serie.HeaderText = "Numero de Serie";
+            this.numero_serie.Name = "numero_serie";
+            this.numero_serie.Width = 200;
+            // 
+            // descripcion
+            // 
+            this.descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
             // 
             // textBox1
             // 
@@ -177,30 +205,6 @@
             this.tabPage3.Text = "Busqueda de Especialistas";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.Width = 200;
-            // 
-            // especialidad
-            // 
-            this.especialidad.HeaderText = "Especialidad";
-            this.especialidad.Name = "especialidad";
-            this.especialidad.Width = 200;
-            // 
-            // numero_serie
-            // 
-            this.numero_serie.HeaderText = "Numero de Serie";
-            this.numero_serie.Name = "numero_serie";
-            this.numero_serie.Width = 200;
-            // 
-            // descripcion
-            // 
-            this.descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.descripcion.HeaderText = "Descripcion";
-            this.descripcion.Name = "descripcion";
-            // 
             // main_provedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +214,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "main_provedor";
             this.Text = "main_provedor";
+            this.Load += new System.EventHandler(this.main_provedor_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);

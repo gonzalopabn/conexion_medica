@@ -16,7 +16,7 @@ namespace conexion_medica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new datos_prov());
+            Application.Run(new inicio_sesion());
         }
     }
 }

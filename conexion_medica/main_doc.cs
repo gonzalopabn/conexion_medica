@@ -144,6 +144,12 @@ namespace conexion_medica
             np.tabControl1.SelectTab(1);
             this.Close(); 
         }
+
+        private void datosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void mostrar()
         {
             this.Show(); 
