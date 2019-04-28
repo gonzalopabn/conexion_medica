@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using MySql.Data.MySqlClient;
 using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
-using GMap.NET.WindowsForms.Markers; 
+using GMap.NET.WindowsForms.Markers;
+
+
 
 namespace conexion_medica
 {
-    public partial class main_provedor : Form
+    public partial class main_provedor : MaterialForm
     {
         GMarkerGoogle marker;
         GMapOverlay markerOverlay;
@@ -26,13 +30,15 @@ namespace conexion_medica
         public main_provedor()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red800, Primary.Red900, Primary.Red500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            inicio_sesion ini = new inicio_sesion();
-            ini.abrir();
-            this.Close(); 
+           
         }
         int a, b;
         private void main_provedor_Load(object sender, EventArgs e)
@@ -79,16 +85,12 @@ namespace conexion_medica
 
         private void registrarPacienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            nuevo_equipo ne = new nuevo_equipo();
-            ne.Show();
-            this.Hide(); 
+           
         }
 
         private void verDatosPersonalesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            datos_prov dp = new datos_prov();
-            dp.Show();
-            this.Hide(); 
+           
         }
 
         private void dataGridView1_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -187,6 +189,27 @@ namespace conexion_medica
         private void panel4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            datos_prov dp = new datos_prov();
+            dp.Show();
+            this.Hide();
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            nuevo_equipo ne = new nuevo_equipo();
+            ne.Show();
+            this.Hide();
+        }
+
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            inicio_sesion ini = new inicio_sesion();
+            ini.abrir();
+            this.Close();
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
