@@ -44,10 +44,20 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.id_reporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_paciente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -131,6 +141,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1216, 534);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseDoubleClick);
             // 
             // nombre_paciente
             // 
@@ -188,13 +199,79 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1232, 602);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Busqueda de Especialistas";
+            this.tabPage3.Text = "Busqueda de Reportes:";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_reporte,
+            this.id_paciente,
+            this.nombre,
+            this.fecha,
+            this.descripcion});
+            this.dataGridView2.Location = new System.Drawing.Point(10, 64);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1216, 534);
+            this.dataGridView2.TabIndex = 33;
+            this.dataGridView2.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_RowHeaderMouseDoubleClick);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.textBox2.Location = new System.Drawing.Point(10, 32);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(204, 25);
+            this.textBox2.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 23);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "ID Reporte:";
+            // 
+            // id_reporte
+            // 
+            this.id_reporte.HeaderText = "ID Reporte";
+            this.id_reporte.Name = "id_reporte";
+            this.id_reporte.Width = 150;
+            // 
+            // id_paciente
+            // 
+            this.id_paciente.HeaderText = "ID Paciente";
+            this.id_paciente.Name = "id_paciente";
+            this.id_paciente.Width = 150;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 250;
+            // 
+            // fecha
+            // 
+            this.fecha.HeaderText = "Fecha";
+            this.fecha.Name = "fecha";
+            this.fecha.Width = 200;
+            // 
+            // descripcion
+            // 
+            this.descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
             // 
             // main_doc
             // 
@@ -213,6 +290,9 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +316,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre_paciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido_paciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn curp;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_reporte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_paciente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
     }
 }

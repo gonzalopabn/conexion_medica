@@ -41,7 +41,7 @@ namespace conexion_medica
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             main_doc md = new main_doc();
-            md.Show();
+            md.mostrar(); 
             this.Close(); 
         }
 

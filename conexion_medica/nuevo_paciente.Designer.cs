@@ -30,11 +30,19 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.t_comen = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.t0 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.t_contra = new System.Windows.Forms.TextBox();
@@ -67,6 +75,8 @@
             this.t1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.t16 = new System.Windows.Forms.ComboBox();
+            this.t17 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.t19 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -77,16 +87,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.t14 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.t_comen = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.guardarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.t17 = new System.Windows.Forms.DateTimePicker();
-            this.t16 = new System.Windows.Forms.ComboBox();
-            this.actualizarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -118,6 +118,20 @@
             this.guardarToolStripMenuItem.Text = "Guardar";
             this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
+            // guardarPacienteToolStripMenuItem
+            // 
+            this.guardarPacienteToolStripMenuItem.Name = "guardarPacienteToolStripMenuItem";
+            this.guardarPacienteToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.guardarPacienteToolStripMenuItem.Text = "Guardar paciente";
+            this.guardarPacienteToolStripMenuItem.Click += new System.EventHandler(this.guardarPacienteToolStripMenuItem_Click);
+            // 
+            // guardarReporteToolStripMenuItem
+            // 
+            this.guardarReporteToolStripMenuItem.Name = "guardarReporteToolStripMenuItem";
+            this.guardarReporteToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.guardarReporteToolStripMenuItem.Text = "Guardar reporte";
+            this.guardarReporteToolStripMenuItem.Click += new System.EventHandler(this.guardarReporteToolStripMenuItem_Click);
+            // 
             // actualizarToolStripMenuItem
             // 
             this.actualizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -128,6 +142,20 @@
             this.actualizarToolStripMenuItem.Text = "Actualizar";
             this.actualizarToolStripMenuItem.Click += new System.EventHandler(this.actualizarToolStripMenuItem_Click);
             // 
+            // actualizarPacienteToolStripMenuItem
+            // 
+            this.actualizarPacienteToolStripMenuItem.Name = "actualizarPacienteToolStripMenuItem";
+            this.actualizarPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.actualizarPacienteToolStripMenuItem.Text = "Actualizar Paciente";
+            this.actualizarPacienteToolStripMenuItem.Click += new System.EventHandler(this.actualizarPacienteToolStripMenuItem_Click);
+            // 
+            // actualizarReporteToolStripMenuItem
+            // 
+            this.actualizarReporteToolStripMenuItem.Name = "actualizarReporteToolStripMenuItem";
+            this.actualizarReporteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.actualizarReporteToolStripMenuItem.Text = "Actualizar Reporte";
+            this.actualizarReporteToolStripMenuItem.Click += new System.EventHandler(this.actualizarReporteToolStripMenuItem_Click);
+            // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -137,6 +165,20 @@
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
+            // eliminarPacienteToolStripMenuItem
+            // 
+            this.eliminarPacienteToolStripMenuItem.Name = "eliminarPacienteToolStripMenuItem";
+            this.eliminarPacienteToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.eliminarPacienteToolStripMenuItem.Text = "Eliminar Paciente";
+            this.eliminarPacienteToolStripMenuItem.Click += new System.EventHandler(this.eliminarPacienteToolStripMenuItem_Click);
+            // 
+            // eliminarReporteToolStripMenuItem
+            // 
+            this.eliminarReporteToolStripMenuItem.Name = "eliminarReporteToolStripMenuItem";
+            this.eliminarReporteToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.eliminarReporteToolStripMenuItem.Text = "Eliminar Reporte";
+            this.eliminarReporteToolStripMenuItem.Click += new System.EventHandler(this.eliminarReporteToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -199,6 +241,25 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Informacion General";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // t_comen
+            // 
+            this.t_comen.Font = new System.Drawing.Font("Roboto Lt", 10F);
+            this.t_comen.Location = new System.Drawing.Point(405, 476);
+            this.t_comen.Multiline = true;
+            this.t_comen.Name = "t_comen";
+            this.t_comen.Size = new System.Drawing.Size(281, 190);
+            this.t_comen.TabIndex = 34;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(401, 449);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(112, 23);
+            this.label21.TabIndex = 33;
+            this.label21.Text = "Comentario:";
             // 
             // t0
             // 
@@ -501,6 +562,29 @@
             this.tabPage2.Text = "Historial Medico";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // t16
+            // 
+            this.t16.FormattingEnabled = true;
+            this.t16.Items.AddRange(new object[] {
+            "Tratamientos",
+            "Notas Hospitalarias",
+            "Interconsultas",
+            "Examenes de Laboratorio",
+            "Notas Quirurgicas",
+            "Reportes de Radiologia",
+            "Notas Ambulatorias"});
+            this.t16.Location = new System.Drawing.Point(10, 140);
+            this.t16.Name = "t16";
+            this.t16.Size = new System.Drawing.Size(281, 30);
+            this.t16.TabIndex = 42;
+            // 
+            // t17
+            // 
+            this.t17.Location = new System.Drawing.Point(10, 199);
+            this.t17.Name = "t17";
+            this.t17.Size = new System.Drawing.Size(281, 29);
+            this.t17.TabIndex = 41;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(499, 345);
@@ -592,90 +676,6 @@
             this.label19.TabIndex = 27;
             this.label19.Text = "ID Reporte:";
             // 
-            // t_comen
-            // 
-            this.t_comen.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t_comen.Location = new System.Drawing.Point(405, 476);
-            this.t_comen.Multiline = true;
-            this.t_comen.Name = "t_comen";
-            this.t_comen.Size = new System.Drawing.Size(281, 190);
-            this.t_comen.TabIndex = 34;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(401, 449);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(112, 23);
-            this.label21.TabIndex = 33;
-            this.label21.Text = "Comentario:";
-            // 
-            // guardarPacienteToolStripMenuItem
-            // 
-            this.guardarPacienteToolStripMenuItem.Name = "guardarPacienteToolStripMenuItem";
-            this.guardarPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.guardarPacienteToolStripMenuItem.Text = "Guardar paciente";
-            this.guardarPacienteToolStripMenuItem.Click += new System.EventHandler(this.guardarPacienteToolStripMenuItem_Click);
-            // 
-            // guardarReporteToolStripMenuItem
-            // 
-            this.guardarReporteToolStripMenuItem.Name = "guardarReporteToolStripMenuItem";
-            this.guardarReporteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.guardarReporteToolStripMenuItem.Text = "Guardar reporte";
-            this.guardarReporteToolStripMenuItem.Click += new System.EventHandler(this.guardarReporteToolStripMenuItem_Click);
-            // 
-            // t17
-            // 
-            this.t17.Location = new System.Drawing.Point(10, 199);
-            this.t17.Name = "t17";
-            this.t17.Size = new System.Drawing.Size(281, 29);
-            this.t17.TabIndex = 41;
-            // 
-            // t16
-            // 
-            this.t16.FormattingEnabled = true;
-            this.t16.Items.AddRange(new object[] {
-            "Tratamientos",
-            "Notas Hospitalarias",
-            "Interconsultas",
-            "Examenes de Laboratorio",
-            "Notas Quirurgicas",
-            "Reportes de Radiologia",
-            "Notas Ambulatorias"});
-            this.t16.Location = new System.Drawing.Point(10, 140);
-            this.t16.Name = "t16";
-            this.t16.Size = new System.Drawing.Size(281, 30);
-            this.t16.TabIndex = 42;
-            // 
-            // actualizarPacienteToolStripMenuItem
-            // 
-            this.actualizarPacienteToolStripMenuItem.Name = "actualizarPacienteToolStripMenuItem";
-            this.actualizarPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.actualizarPacienteToolStripMenuItem.Text = "Actualizar Paciente";
-            this.actualizarPacienteToolStripMenuItem.Click += new System.EventHandler(this.actualizarPacienteToolStripMenuItem_Click);
-            // 
-            // actualizarReporteToolStripMenuItem
-            // 
-            this.actualizarReporteToolStripMenuItem.Name = "actualizarReporteToolStripMenuItem";
-            this.actualizarReporteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.actualizarReporteToolStripMenuItem.Text = "Actualizar Reporte";
-            this.actualizarReporteToolStripMenuItem.Click += new System.EventHandler(this.actualizarReporteToolStripMenuItem_Click);
-            // 
-            // eliminarPacienteToolStripMenuItem
-            // 
-            this.eliminarPacienteToolStripMenuItem.Name = "eliminarPacienteToolStripMenuItem";
-            this.eliminarPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.eliminarPacienteToolStripMenuItem.Text = "Eliminar Paciente";
-            this.eliminarPacienteToolStripMenuItem.Click += new System.EventHandler(this.eliminarPacienteToolStripMenuItem_Click);
-            // 
-            // eliminarReporteToolStripMenuItem
-            // 
-            this.eliminarReporteToolStripMenuItem.Name = "eliminarReporteToolStripMenuItem";
-            this.eliminarReporteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.eliminarReporteToolStripMenuItem.Text = "Eliminar Reporte";
-            this.eliminarReporteToolStripMenuItem.Click += new System.EventHandler(this.eliminarReporteToolStripMenuItem_Click);
-            // 
             // nuevo_paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,64 +701,64 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox t13;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox t3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox t12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox t11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox t10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox t9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox t8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox t7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox t6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox t5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox t4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox t2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox t1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox t18;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox t15;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox t14;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox t19;
-        private System.Windows.Forms.TextBox t0;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox t_contra;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox t_comen;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ToolStripMenuItem guardarPacienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem guardarReporteToolStripMenuItem;
-        private System.Windows.Forms.ComboBox t16;
-        private System.Windows.Forms.DateTimePicker t17;
-        private System.Windows.Forms.ToolStripMenuItem actualizarPacienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarReporteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarPacienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarReporteToolStripMenuItem;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        public System.Windows.Forms.TabControl tabControl1;
+        public System.Windows.Forms.TabPage tabPage1;
+        public System.Windows.Forms.TextBox t13;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.TextBox t3;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox t12;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.TextBox t11;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.TextBox t10;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox t9;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox t8;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox t7;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox t6;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox t5;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox t4;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox t2;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox t1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TabPage tabPage2;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.TextBox t18;
+        public System.Windows.Forms.Label label16;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.TextBox t15;
+        public System.Windows.Forms.Label label18;
+        public System.Windows.Forms.TextBox t14;
+        public System.Windows.Forms.Label label19;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox t19;
+        public System.Windows.Forms.TextBox t0;
+        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.TextBox t_contra;
+        public System.Windows.Forms.Label label20;
+        public System.Windows.Forms.TextBox t_comen;
+        public System.Windows.Forms.Label label21;
+        public System.Windows.Forms.ToolStripMenuItem guardarPacienteToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem guardarReporteToolStripMenuItem;
+        public System.Windows.Forms.ComboBox t16;
+        public System.Windows.Forms.DateTimePicker t17;
+        public System.Windows.Forms.ToolStripMenuItem actualizarPacienteToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem actualizarReporteToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem eliminarPacienteToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem eliminarReporteToolStripMenuItem;
     }
 }
