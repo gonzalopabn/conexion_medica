@@ -83,6 +83,10 @@
             this.guardarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.t17 = new System.Windows.Forms.DateTimePicker();
             this.t16 = new System.Windows.Forms.ComboBox();
+            this.actualizarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -116,6 +120,9 @@
             // 
             // actualizarToolStripMenuItem
             // 
+            this.actualizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.actualizarPacienteToolStripMenuItem,
+            this.actualizarReporteToolStripMenuItem});
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
             this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(80, 23);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
@@ -123,6 +130,9 @@
             // 
             // eliminarToolStripMenuItem
             // 
+            this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eliminarPacienteToolStripMenuItem,
+            this.eliminarReporteToolStripMenuItem});
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
@@ -638,6 +648,34 @@
             this.t16.Size = new System.Drawing.Size(281, 30);
             this.t16.TabIndex = 42;
             // 
+            // actualizarPacienteToolStripMenuItem
+            // 
+            this.actualizarPacienteToolStripMenuItem.Name = "actualizarPacienteToolStripMenuItem";
+            this.actualizarPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.actualizarPacienteToolStripMenuItem.Text = "Actualizar Paciente";
+            this.actualizarPacienteToolStripMenuItem.Click += new System.EventHandler(this.actualizarPacienteToolStripMenuItem_Click);
+            // 
+            // actualizarReporteToolStripMenuItem
+            // 
+            this.actualizarReporteToolStripMenuItem.Name = "actualizarReporteToolStripMenuItem";
+            this.actualizarReporteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.actualizarReporteToolStripMenuItem.Text = "Actualizar Reporte";
+            this.actualizarReporteToolStripMenuItem.Click += new System.EventHandler(this.actualizarReporteToolStripMenuItem_Click);
+            // 
+            // eliminarPacienteToolStripMenuItem
+            // 
+            this.eliminarPacienteToolStripMenuItem.Name = "eliminarPacienteToolStripMenuItem";
+            this.eliminarPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.eliminarPacienteToolStripMenuItem.Text = "Eliminar Paciente";
+            this.eliminarPacienteToolStripMenuItem.Click += new System.EventHandler(this.eliminarPacienteToolStripMenuItem_Click);
+            // 
+            // eliminarReporteToolStripMenuItem
+            // 
+            this.eliminarReporteToolStripMenuItem.Name = "eliminarReporteToolStripMenuItem";
+            this.eliminarReporteToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.eliminarReporteToolStripMenuItem.Text = "Eliminar Reporte";
+            this.eliminarReporteToolStripMenuItem.Click += new System.EventHandler(this.eliminarReporteToolStripMenuItem_Click);
+            // 
             // nuevo_paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -718,5 +756,9 @@
         private System.Windows.Forms.ToolStripMenuItem guardarReporteToolStripMenuItem;
         private System.Windows.Forms.ComboBox t16;
         private System.Windows.Forms.DateTimePicker t17;
+        private System.Windows.Forms.ToolStripMenuItem actualizarPacienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarReporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarPacienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarReporteToolStripMenuItem;
     }
 }
