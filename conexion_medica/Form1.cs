@@ -8,14 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MaterialSkin.Controls;
+using MaterialSkin; 
 
 namespace conexion_medica
 {
-    public partial class inicio_sesion : Form
+    public partial class inicio_sesion : MaterialForm
     {
         public inicio_sesion()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red800, Primary.Red900, Primary.Red500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         public void abrir()
@@ -25,6 +31,16 @@ namespace conexion_medica
         public static string id; 
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void inicio_sesion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
         {
             main_paciente mp = new main_paciente();
             main_doc md = new main_doc();
@@ -41,9 +57,9 @@ namespace conexion_medica
                 myR = sc.ExecuteReader();
                 int count = 0;
                 while (myR.Read())
-                {               
+                {
                     count = count + 1;
-                    mp.t_id.Text = myR[0].ToString(); 
+                    mp.t_id.Text = myR[0].ToString();
                     mp.t1.Text = myR[1].ToString();
                     mp.t2.Text = myR[2].ToString();
                     mp.t3.Text = myR[3].ToString();
@@ -58,21 +74,21 @@ namespace conexion_medica
                     mp.t12.Text = myR[12].ToString();
                     mp.t13.Text = myR[13].ToString();
                     mp.t14.Text = myR[14].ToString();
-                    
+
                 }
                 myConn.Close();
                 if (count == 1)
                 {
-                    MessageBox.Show("Bienvenido");                    
+                    MessageBox.Show("Bienvenido");
                     mp.Show();
                     count = 0;
                     id = t_usuario.Text;
-                   
+
                     t_usuario.Clear();
                     t_contra.Clear();
                     this.Hide();
                 }
-                else if(count == 0)
+                else if (count == 0)
                 {
                     MySqlCommand sc1 = new MySqlCommand("select * from MtcqKvJRNU.doctor where id_doctor='" + t_usuario.Text + "' and contrasena='" + t_contra.Text + "' ;", myConn);
                     myConn.Open();
@@ -84,7 +100,7 @@ namespace conexion_medica
                     myConn.Close();
                     if (count == 1)
                     {
-                        MessageBox.Show("Bienvenido");                       
+                        MessageBox.Show("Bienvenido");
                         md.Show();
                         count = 0;
                         id = t_usuario.Text;
@@ -105,10 +121,10 @@ namespace conexion_medica
                         myConn.Close();
                         if (count == 1)
                         {
-                            MessageBox.Show("Bienvenido");                          
+                            MessageBox.Show("Bienvenido");
                             mpo.Show();
                             count = 0;
-                            
+
                             t_usuario.Clear();
                             t_contra.Clear();
                             this.Hide();
@@ -118,7 +134,7 @@ namespace conexion_medica
                             MessageBox.Show("Intente nuevamente, los datos no coinciden");
                         }
                     }
-                }               
+                }
             }
             catch (Exception ex)
             {

@@ -43,9 +43,8 @@ namespace conexion_medica
             inicio_sesion inn = new inicio_sesion(); 
             string myC = "datasource=remotemysql.com ;port=3306;username=MtcqKvJRNU;password=8cjzPjeLPp";
             MySqlConnection myConn = new MySqlConnection(myC);
-            String query = string.Format("select * from MtcqKvJRNU.equipo LIMIT {0},{1};", a,b);
             MySqlCommand sc = new MySqlCommand("select * from MtcqKvJRNU.equipo where nom_lugar = '"+inicio_sesion.id+"';", myConn);
-
+            String query = string.Format("select * from MtcqKvJRNU.equipo LIMIT {0},{1};", a,b);
             MySqlCommand sc2 = new MySqlCommand(query, myConn);
             MySqlDataReader myR;
             myConn.Open();

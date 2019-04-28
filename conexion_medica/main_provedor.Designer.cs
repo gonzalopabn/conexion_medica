@@ -278,7 +278,7 @@
             this.panel7.Controls.Add(this.button1);
             this.panel7.Location = new System.Drawing.Point(10, 495);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(319, 100);
+            this.panel7.Size = new System.Drawing.Size(296, 100);
             this.panel7.TabIndex = 44;
             // 
             // button1
@@ -303,7 +303,7 @@
             this.panel6.Controls.Add(this.label31);
             this.panel6.Location = new System.Drawing.Point(10, 389);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(319, 100);
+            this.panel6.Size = new System.Drawing.Size(296, 100);
             this.panel6.TabIndex = 44;
             // 
             // enc4
@@ -398,7 +398,7 @@
             this.panel5.Controls.Add(this.label23);
             this.panel5.Location = new System.Drawing.Point(10, 283);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(319, 100);
+            this.panel5.Size = new System.Drawing.Size(296, 100);
             this.panel5.TabIndex = 44;
             // 
             // enc3
@@ -493,7 +493,7 @@
             this.panel4.Controls.Add(this.label14);
             this.panel4.Location = new System.Drawing.Point(10, 177);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(319, 100);
+            this.panel4.Size = new System.Drawing.Size(296, 100);
             this.panel4.TabIndex = 36;
             this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
@@ -623,7 +623,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(10, 71);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(319, 100);
+            this.panel3.Size = new System.Drawing.Size(296, 100);
             this.panel3.TabIndex = 33;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
@@ -721,7 +721,7 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(7, 62);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1219, 2);
+            this.panel1.Size = new System.Drawing.Size(1221, 2);
             this.panel1.TabIndex = 31;
             // 
             // comboBox1
@@ -734,7 +734,7 @@
             "Especialidad"});
             this.comboBox1.Location = new System.Drawing.Point(7, 30);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 26);
+            this.comboBox1.Size = new System.Drawing.Size(172, 26);
             this.comboBox1.TabIndex = 30;
             // 
             // textBox2
@@ -742,7 +742,7 @@
             this.textBox2.Font = new System.Drawing.Font("Roboto Lt", 10F);
             this.textBox2.Location = new System.Drawing.Point(219, 30);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 25);
+            this.textBox2.Size = new System.Drawing.Size(181, 25);
             this.textBox2.TabIndex = 29;
             // 
             // label2
@@ -763,7 +763,7 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(340, 121);
+            this.gMapControl1.Location = new System.Drawing.Point(350, 78);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 2;
             this.gMapControl1.MinZoom = 2;
@@ -777,7 +777,7 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(886, 474);
+            this.gMapControl1.Size = new System.Drawing.Size(876, 517);
             this.gMapControl1.TabIndex = 45;
             this.gMapControl1.Zoom = 0D;
             // 
