@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.t10 = new System.Windows.Forms.ComboBox();
             this.t7 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.t6 = new System.Windows.Forms.TextBox();
@@ -54,69 +53,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.t1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.t10 = new System.Windows.Forms.ComboBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // t10
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(13, 40);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(759, 718);
-            this.tabControl1.TabIndex = 6;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.t10);
-            this.tabPage1.Controls.Add(this.t7);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.t6);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.t5);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.t0);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.t3);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.t11);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.t9);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.t8);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.t4);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.t2);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.t1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 31);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(751, 683);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Informacion General";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.t10.FormattingEnabled = true;
+            this.t10.Location = new System.Drawing.Point(16, 637);
+            this.t10.Name = "t10";
+            this.t10.Size = new System.Drawing.Size(281, 21);
+            this.t10.TabIndex = 35;
             // 
             // t7
             // 
             this.t7.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t7.Location = new System.Drawing.Point(11, 364);
+            this.t7.Location = new System.Drawing.Point(16, 468);
             this.t7.Name = "t7";
             this.t7.Size = new System.Drawing.Size(281, 25);
             this.t7.TabIndex = 34;
@@ -125,7 +81,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 337);
+            this.label3.Location = new System.Drawing.Point(12, 441);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 23);
             this.label3.TabIndex = 33;
@@ -134,7 +90,7 @@
             // t6
             // 
             this.t6.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t6.Location = new System.Drawing.Point(11, 309);
+            this.t6.Location = new System.Drawing.Point(16, 413);
             this.t6.Name = "t6";
             this.t6.Size = new System.Drawing.Size(281, 25);
             this.t6.TabIndex = 32;
@@ -143,7 +99,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 282);
+            this.label4.Location = new System.Drawing.Point(12, 386);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 23);
             this.label4.TabIndex = 31;
@@ -152,7 +108,7 @@
             // t5
             // 
             this.t5.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t5.Location = new System.Drawing.Point(11, 254);
+            this.t5.Location = new System.Drawing.Point(16, 358);
             this.t5.Name = "t5";
             this.t5.Size = new System.Drawing.Size(281, 25);
             this.t5.TabIndex = 30;
@@ -161,7 +117,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 227);
+            this.label5.Location = new System.Drawing.Point(12, 331);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 23);
             this.label5.TabIndex = 29;
@@ -170,7 +126,7 @@
             // t0
             // 
             this.t0.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t0.Location = new System.Drawing.Point(333, 309);
+            this.t0.Location = new System.Drawing.Point(338, 413);
             this.t0.Name = "t0";
             this.t0.Size = new System.Drawing.Size(281, 25);
             this.t0.TabIndex = 28;
@@ -179,7 +135,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(329, 282);
+            this.label13.Location = new System.Drawing.Point(334, 386);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(79, 23);
             this.label13.TabIndex = 27;
@@ -188,7 +144,7 @@
             // t3
             // 
             this.t3.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t3.Location = new System.Drawing.Point(11, 144);
+            this.t3.Location = new System.Drawing.Point(16, 248);
             this.t3.Name = "t3";
             this.t3.Size = new System.Drawing.Size(281, 25);
             this.t3.TabIndex = 26;
@@ -197,7 +153,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(7, 117);
+            this.label8.Location = new System.Drawing.Point(12, 221);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 23);
             this.label8.TabIndex = 25;
@@ -205,7 +161,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(333, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(338, 138);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(402, 245);
             this.pictureBox1.TabIndex = 24;
@@ -214,7 +170,7 @@
             // t11
             // 
             this.t11.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t11.Location = new System.Drawing.Point(333, 362);
+            this.t11.Location = new System.Drawing.Point(338, 466);
             this.t11.Name = "t11";
             this.t11.Size = new System.Drawing.Size(281, 25);
             this.t11.TabIndex = 23;
@@ -223,7 +179,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(329, 335);
+            this.label11.Location = new System.Drawing.Point(334, 439);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(111, 23);
             this.label11.TabIndex = 22;
@@ -233,7 +189,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(7, 506);
+            this.label12.Location = new System.Drawing.Point(12, 610);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(115, 23);
             this.label12.TabIndex = 20;
@@ -242,7 +198,7 @@
             // t9
             // 
             this.t9.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t9.Location = new System.Drawing.Point(11, 478);
+            this.t9.Location = new System.Drawing.Point(16, 582);
             this.t9.Name = "t9";
             this.t9.Size = new System.Drawing.Size(281, 25);
             this.t9.TabIndex = 19;
@@ -251,7 +207,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(7, 451);
+            this.label9.Location = new System.Drawing.Point(12, 555);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 23);
             this.label9.TabIndex = 18;
@@ -260,7 +216,7 @@
             // t8
             // 
             this.t8.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t8.Location = new System.Drawing.Point(11, 423);
+            this.t8.Location = new System.Drawing.Point(16, 527);
             this.t8.Name = "t8";
             this.t8.Size = new System.Drawing.Size(281, 25);
             this.t8.TabIndex = 17;
@@ -269,7 +225,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(7, 396);
+            this.label10.Location = new System.Drawing.Point(12, 500);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 23);
             this.label10.TabIndex = 16;
@@ -278,7 +234,7 @@
             // t4
             // 
             this.t4.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t4.Location = new System.Drawing.Point(11, 199);
+            this.t4.Location = new System.Drawing.Point(16, 303);
             this.t4.Name = "t4";
             this.t4.Size = new System.Drawing.Size(281, 25);
             this.t4.TabIndex = 13;
@@ -287,7 +243,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 172);
+            this.label7.Location = new System.Drawing.Point(12, 276);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 23);
             this.label7.TabIndex = 12;
@@ -296,7 +252,7 @@
             // t2
             // 
             this.t2.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t2.Location = new System.Drawing.Point(11, 89);
+            this.t2.Location = new System.Drawing.Point(16, 193);
             this.t2.Name = "t2";
             this.t2.Size = new System.Drawing.Size(281, 25);
             this.t2.TabIndex = 3;
@@ -305,7 +261,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 62);
+            this.label2.Location = new System.Drawing.Point(12, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 23);
             this.label2.TabIndex = 2;
@@ -314,7 +270,7 @@
             // t1
             // 
             this.t1.Font = new System.Drawing.Font("Roboto Lt", 10F);
-            this.t1.Location = new System.Drawing.Point(11, 34);
+            this.t1.Location = new System.Drawing.Point(16, 138);
             this.t1.Name = "t1";
             this.t1.Size = new System.Drawing.Size(281, 25);
             this.t1.TabIndex = 1;
@@ -323,86 +279,119 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Lt", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 7);
+            this.label1.Location = new System.Drawing.Point(12, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre:";
             // 
-            // salirToolStripMenuItem
+            // materialRaisedButton4
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(46, 23);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            this.materialRaisedButton4.Depth = 0;
+            this.materialRaisedButton4.Location = new System.Drawing.Point(668, 61);
+            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton4.Name = "materialRaisedButton4";
+            this.materialRaisedButton4.Primary = true;
+            this.materialRaisedButton4.Size = new System.Drawing.Size(75, 23);
+            this.materialRaisedButton4.TabIndex = 46;
+            this.materialRaisedButton4.Text = "Salir";
+            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
             // 
-            // actualizarToolStripMenuItem
+            // materialRaisedButton3
             // 
-            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(80, 23);
-            this.actualizarToolStripMenuItem.Text = "Actualizar";
-            this.actualizarToolStripMenuItem.Click += new System.EventHandler(this.actualizarToolStripMenuItem_Click);
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(200, 61);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(75, 23);
+            this.materialRaisedButton3.TabIndex = 45;
+            this.materialRaisedButton3.Text = "Eliminar";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
             // 
-            // guardarToolStripMenuItem
+            // materialRaisedButton2
             // 
-            this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(71, 23);
-            this.guardarToolStripMenuItem.Text = "Guardar";
-            this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(97, 61);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(97, 23);
+            this.materialRaisedButton2.TabIndex = 44;
+            this.materialRaisedButton2.Text = "Actualizar";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
-            // menuStrip1
+            // materialRaisedButton1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.guardarToolStripMenuItem,
-            this.actualizarToolStripMenuItem,
-            this.eliminarToolStripMenuItem,
-            this.salirToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 27);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(16, 61);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(75, 23);
+            this.materialRaisedButton1.TabIndex = 43;
+            this.materialRaisedButton1.Text = "Guardar";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
-            // eliminarToolStripMenuItem
+            // materialTabSelector1
             // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
-            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
-            // 
-            // t10
-            // 
-            this.t10.FormattingEnabled = true;
-            this.t10.Location = new System.Drawing.Point(11, 533);
-            this.t10.Name = "t10";
-            this.t10.Size = new System.Drawing.Size(281, 30);
-            this.t10.TabIndex = 35;
+            this.materialTabSelector1.BaseTabControl = null;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(0, 61);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(765, 23);
+            this.materialTabSelector1.TabIndex = 42;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
             // datos_prov
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 761);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(758, 687);
+            this.Controls.Add(this.materialRaisedButton4);
+            this.Controls.Add(this.materialRaisedButton3);
+            this.Controls.Add(this.materialRaisedButton2);
+            this.Controls.Add(this.materialRaisedButton1);
+            this.Controls.Add(this.materialTabSelector1);
+            this.Controls.Add(this.t10);
+            this.Controls.Add(this.t7);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.t6);
+            this.Controls.Add(this.t1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.t5);
+            this.Controls.Add(this.t2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.t0);
+            this.Controls.Add(this.t4);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.t3);
+            this.Controls.Add(this.t8);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.t9);
+            this.Controls.Add(this.t11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Name = "datos_prov";
-            this.Text = "datos_prov";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.Text = "Datos de Provedor";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox t0;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox t3;
@@ -421,11 +410,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox t1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.TextBox t7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox t6;
@@ -433,5 +417,10 @@
         private System.Windows.Forms.TextBox t5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox t10;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
     }
 }

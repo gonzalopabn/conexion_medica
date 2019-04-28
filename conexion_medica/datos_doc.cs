@@ -8,18 +8,49 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.IO; 
+using System.IO;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace conexion_medica
 {
-    public partial class datos_doc : Form
+    public partial class datos_doc : MaterialForm
     {
         public datos_doc()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red800, Primary.Red900, Primary.Red500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void datos_doc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -29,10 +60,10 @@ namespace conexion_medica
                     "VALUES ('{0}', '{1}', '{2}','{3}','{4}','{5}', '{6}', '{7}','{8}','{9}','{10}','{11}')",
                     t11.Text, t1.Text, t2.Text, t3.Text, t4.Text, t5.Text, t6.Text, t7.Text, t8.Text, t9.Text, t10.Text, t12.Text);
                 myConn.Open();
-                MySqlCommand sc = new MySqlCommand(query,myConn);               
-                sc.ExecuteNonQuery();                
+                MySqlCommand sc = new MySqlCommand(query, myConn);
+                sc.ExecuteNonQuery();
                 myConn.Close();
-                MessageBox.Show("Informacion guardada exitosamente");              
+                MessageBox.Show("Informacion guardada exitosamente");
             }
             catch (Exception ex)
             {
@@ -40,7 +71,7 @@ namespace conexion_medica
             }
         }
 
-        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
             try
             {
@@ -59,7 +90,7 @@ namespace conexion_medica
             }
         }
 
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             try
             {
@@ -70,7 +101,7 @@ namespace conexion_medica
                 MySqlCommand sc = new MySqlCommand(query, myConn);
                 sc.ExecuteNonQuery();
                 myConn.Close();
-                MessageBox.Show("Informacion actualizada exitosamente");
+                MessageBox.Show("Informacion eliminada exitosamente");
             }
             catch (Exception ex)
             {
@@ -78,11 +109,11 @@ namespace conexion_medica
             }
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
         {
             main_doc md = new main_doc();
             md.Show();
-            this.Close(); 
+            this.Close();
         }
     }
 }
