@@ -142,5 +142,12 @@ namespace conexion_medica
             }
 
         }
+
+        private void materialFlatButton2_Click(object sender, EventArgs e)
+        {
+            nuevo_paciente np = new nuevo_paciente();
+            np.Show();
+            this.Hide(); 
+        }
     }
 }
